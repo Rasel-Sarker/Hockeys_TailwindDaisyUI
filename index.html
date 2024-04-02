@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <!-- font awesome icon link -->
+      <script
+         src="https://kit.fontawesome.com/3c171ce88a.js"
+         crossorigin="anonymous"
+      ></script>
+      <!-- google font : Manrope -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+         rel="stylesheet"
+      />
+      <!-- tailwind Daisy UI Link -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css"
+         rel="stylesheet"
+         type="text/css"
+      />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- custom tailwind css -->
+      <script>
+         tailwind.config = {
+            theme: {
+               extend: {
+                  colors: {
+                     clifford: "#da373d",
+                     primaryColor: "#FF4240",
+                     titleColor: "#131318",
+                     descriptionColor: "#13131899",
+                  },
+               },
+            },
+         };
+      </script>
+   </head>
+   <body class="bg-white">
+      <header>
+         <!-- navbar section -->
+         <section class="container mx-auto py-7 lg:py-12">
+            <div class="navbar">
+               <div class="navbar-start">
+                  <div class="dropdown">
+                     <div
+                        tabindex="0"
+                        role="button"
+                        class="btn btn-ghost lg:hidden"
+                     >
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           class="h-5 w-5"
+                           fill="none"
+                           viewBox="0 0 24 24"
+                           stroke="currentColor"
+                        >
+                           <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16"
+                           />
+                        </svg>
+                     </div>
+                     <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                     >
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                     </ul>
+                  </div>
+                  <a class="text-titleColor text-2xl lg:text-4xl font-extrabold"
+                     >Hockey<span class="text-primaryColor">&apos;</span>s</a
+                  >
+               </div>
+               <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-base font-bold">
+                     <li><a class="text-primaryColor">Home</a></li>
+                     <li><a>About</a></li>
+                     <li><a>Pages</a></li>
+                     <li><a>Blog</a></li>
+                     <li><a>Contact</a></li>
+                  </ul>
+               </div>
+               <div class="navbar-end flex gap-6">
+                  <div class="hidden lg:flex">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <a class="btn bg-primaryColor text-lg lg:text-xl"
+                     >Get Ticket</a
+                  >
+               </div>
+            </div>
+         </section>
+         <!-- carousel slider section -->
+         <section class="container mx-auto relative">
+            <div class="carousel w-full">
+               <!-- slider 1 -->
+               <div id="slide1" class="carousel-item relative w-full h-[70vh]">
+                  <img src="./images/1.png" class="w-full" />
+                  <div
+                     class="absolute bottom-5 left-5 right-0 text-center lg:right-[unset]"
+                  >
+                     <a
+                        href="#slide4"
+                        class="btn btn-circle bg-black border-0 text-white mr-4"
+                        >❮</a
+                     >
+                     <a
+                        href="#slide2"
+                        class="btn btn-circle bg-black border-0 text-white"
+                        >❯</a
+                     >
+                  </div>
+               </div>
+               <!-- slider 2 -->
+               <div id="slide2" class="carousel-item relative w-full h-[70vh]">
+                  <img src="./images/2.png" class="w-full" />
+                  <div
+                     class="absolute bottom-5 left-5 right-0 text-center lg:right-[unset]"
+                  >
+                     <a
+                        href="#slide1"
+                        class="btn btn-circle bg-black border-0 text-white mr-4"
+                        >❮</a
+                     >
+                     <a
+                        href="#slide3"
+                        class="btn btn-circle bg-black border-0 text-white"
+                        >❯</a
+                     >
+                  </div>
+               </div>
+               <!-- slider 3 -->
+               <div id="slide3" class="carousel-item relative w-full h-[70vh]">
+                  <img src="./images/3.png" class="w-full" />
+                  <div
+                     class="absolute bottom-5 left-5 right-0 text-center lg:right-[unset]"
+                  >
+                     <a
+                        href="#slide2"
+                        class="btn btn-circle bg-black border-0 text-white mr-4"
+                        >❮</a
+                     >
+                     <a
+                        href="#slide4"
+                        class="btn btn-circle bg-black border-0 text-white"
+                        >❯</a
+                     >
+                  </div>
+               </div>
+               <!-- slider 1 -->
+               <div id="slide4" class="carousel-item relative w-full h-[70vh]">
+                  <img src="./images/4.png" class="w-full" />
+                  <div
+                     class="absolute bottom-5 left-5 right-0 text-center lg:right-[unset]"
+                  >
+                     <a
+                        href="#slide3"
+                        class="btn btn-circle bg-black border-0 text-white mr-4"
+                        >❮</a
+                     >
+                     <a
+                        href="#slide1"
+                        class="btn btn-circle bg-black border-0 text-white"
+                        >❯</a
+                     >
+                  </div>
+               </div>
+            </div>
+            <!-- badge over the carousel -->
+            <div
+               class="p-3 lg:p-8 bg-black rounded-lg lg:w-1/2 lg:absolute lg:right-10 lg:bottom-10"
+            >
+               <h2 class="text-white text-xl lg:text-2xl font-extrabold">
+                  Meet all the heroes from the field
+               </h2>
+               <p class="text-sm lg:text-base font-medium text-white">
+                  Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                  turpis placerat dolor. Purus urna in sit nullam proin.
+               </p>
+            </div>
+         </section>
+      </header>
+   </body>
+</html>
